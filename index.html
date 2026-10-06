@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e4a5a">
+  <meta name="description" content="Panduan praktis ngemil lebih bijak: kenali porsi, baca label gizi, dan pilih camilan sesuai kebutuhan.">
+  <title>Ngemil Lebih Bijak untuk Tubuh Lebih Sehat</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#konten">Lewati ke isi</a>
+  <header class="site-header" id="atas">
+    <div class="wrap header-row">
+      <a class="brand" href="#atas" aria-label="FIKES UB — kembali ke awal halaman"><span class="brand-image" aria-hidden="true"></span></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-utama">Menu <span aria-hidden="true">☰</span></button>
+      <nav class="nav" id="nav-utama" aria-label="Navigasi utama">
+        <a href="#dampak">Dampak</a><a href="#hitung">Hitung porsi</a><a href="#pilihan">Pilihan snack</a><a href="#situasi">Di luar rumah</a><a href="#alarm">Alarm snack</a><a href="#video">Video</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="konten">
+    <section class="hero" aria-labelledby="judul-utama">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow"><span class="dot"></span> Tips & trik agar ngemil tetap terkontrol</p>
+          <h1 id="judul-utama">Ngemil lebih <em>bijak</em> untuk tubuh lebih <em>sehat.</em></h1>
+          <p class="hero-lead">Ngemil boleh. Yuk, kenali porsinya, cek labelnya, lalu pilih yang pas untukmu.</p>
+          <div class="hero-actions"><a class="button primary" href="#hitung">Coba hitung porsimu <span aria-hidden="true">→</span></a><a class="button outline" href="#label">Belajar cek label</a></div>
+          <p class="intro"><span class="avatar" aria-hidden="true">Hi!</span> Haii, aku Hima, ahli gizi yang sedang melanjutkan profesi dietisien. Kita belajar pelan-pelan, tanpa perlu merasa bersalah saat ingin ngemil.</p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-art-top">Sebelum buka bungkusnya...</div>
+          <div class="snack-pack"><span>SNACK</span><strong>4<span>×</span></strong><small>sajian / kemasan</small></div>
+          <div class="hero-art-note"><span class="note-icon">✓</span><span><strong>Lihat labelnya</strong><small>Angka gizi berlaku per sajian</small></span></div>
+          <div class="hero-art-circle circle-one"></div><div class="hero-art-circle circle-two"></div>
+        </div>
+      </div>
+      <div class="wrap hero-bottom"><span>01 Kenali dampaknya</span><span>02 Hitung & cek label</span><span>03 Siapkan pilihan</span></div>
+    </section>
+
+    <section class="section" id="dampak" aria-labelledby="dampak-title">
+      <div class="wrap">
+        <div class="section-heading"><span class="section-number">01 / KENALI</span><h2 id="dampak-title">Kalau snack kemasan <mark>berlebihan</mark>, apa dampaknya?</h2><p>Yang perlu diperhatikan adalah kebiasaan dan jumlahnya, bukan satu camilan sesekali.</p></div>
+        <div class="effect-grid">
+          <details class="effect-card green"><summary><span class="effect-icon" aria-hidden="true">◌</span><span>Lingkar perut bertambah</span><span class="expand-icon" aria-hidden="true">+</span></summary><p>Jika energi dari makanan dan minuman sering melebihi kebutuhan tubuh, kelebihannya dapat disimpan sebagai lemak, termasuk di area perut.</p></details>
+          <details class="effect-card yellow"><summary><span class="effect-icon" aria-hidden="true">◎</span><span>Risiko obesitas sentral</span><span class="expand-icon" aria-hidden="true">+</span></summary><p>Penumpukan lemak di sekitar perut dan organ dalam berkaitan dengan risiko penyakit tidak menular, seperti diabetes, tekanan darah tinggi, dan gangguan lemak darah.</p></details>
+          <details class="effect-card blue"><summary><span class="effect-icon" aria-hidden="true">↘</span><span>Energi terasa naik turun</span><span class="expand-icon" aria-hidden="true">+</span></summary><p>Camilan yang tinggi gula atau karbohidrat olahan bisa membuat energi terasa cepat naik lalu turun. Rasa mengantuk tidak dapat disimpulkan hanya dari kandungan lemak snack.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="hitung" aria-labelledby="hitung-title">
+      <div class="wrap">
+        <div class="section-heading"><span class="section-number">02 / HITUNG</span><h2 id="hitung-title">Kenali <mark>ruang ngemilmu</mark> dalam sehari.</h2><p>Pilih kelompok usia dan jenis kelamin untuk melihat gambaran umum kebutuhan energi.</p></div>
+        <div class="calc-grid">
+          <div class="panel calc-input">
+            <div class="panel-top"><span class="pill">Kalkulator sederhana</span><span class="tiny-icon" aria-hidden="true">✳</span></div>
+            <div class="field"><label for="gender">Jenis kelamin</label><select id="gender"><option value="P">Perempuan</option><option value="L">Laki-laki</option></select></div>
+            <div class="field"><label for="age">Kelompok usia</label><select id="age"><option value="19-29">19–29 tahun</option><option value="30-49">30–49 tahun</option></select></div>
+            <p class="input-note">Angka ini adalah acuan umum untuk orang dewasa. Kebutuhan pribadimu dapat berbeda menurut aktivitas, kondisi kesehatan, dan keadaan lain.</p>
+          </div>
+          <div class="panel calc-result" aria-live="polite">
+            <p class="result-kicker">Perkiraan kebutuhan energi harian</p><p class="energy-value"><strong id="energy-value">2.250</strong> <span>kkal</span></p>
+            <div class="result-line"><span>Ruang energi camilan 10–12% per hari</span><strong id="snack-value">225–270 kkal</strong></div>
+            <div class="result-line"><span>Batas lemak total dari seluruh makanan (≤30% energi)</span><strong id="fat-value">≤75 g/hari</strong></div>
+            <div class="result-line"><span>Batas lemak jenuh (≤10% energi)</span><strong id="satfat-value">≤25 g/hari</strong></div>
+            <p class="result-note">Jatah camilan adalah perkiraan <strong>total sehari</strong>, bukan jatah untuk setiap kali ngemil. Lemak dihitung dengan 9 kkal per gram.</p>
+          </div>
+        </div>
+        <p class="source-note"><strong>Catatan sumber:</strong> kebutuhan energi memakai AKG Indonesia 2019; batas lemak mengikuti pedoman WHO 2023. Angka camilan 10–12% berasal dari materi edukasi pendamping dan rujukan primernya perlu dipastikan sebelum publikasi.</p>
+      </div>
+    </section>
+
+    <section class="section" id="label" aria-labelledby="label-title">
+      <div class="wrap">
+        <div class="section-heading"><span class="section-number">03 / CEK LABEL</span><h2 id="label-title">Satu bungkus <mark>belum tentu</mark> satu sajian.</h2><p>Coba geser jumlah sajian. Lihat bagaimana angka pada label ikut berubah.</p></div>
+        <div class="label-grid">
+          <div class="nutrition-label" aria-label="Contoh informasi nilai gizi fiktif">
+            <h3>INFORMASI NILAI GIZI</h3><p><strong>Takaran saji 25 g</strong><br><strong>4 sajian per kemasan</strong></p>
+            <div class="label-heavy"></div><p class="label-amount">JUMLAH PER SAJIAN<br>Energi total <strong>140 kkal</strong></p>
+            <div class="label-columns"><span></span><span>Per sajian</span><span>%AKG</span></div>
+            <div class="label-row highlight"><strong>Lemak total</strong><strong>9 g</strong><strong>13%</strong></div>
+            <div class="label-row highlight"><strong>Lemak jenuh</strong><strong>2,5 g</strong><strong>13%</strong></div>
+            <div class="label-row"><span>Protein</span><span>3 g</span><span>5%</span></div>
+            <div class="label-row"><span>Karbohidrat total</span><span>12 g</span><span>4%</span></div>
+            <div class="label-row"><span>Gula</span><span>7 g</span><span>–</span></div>
+            <p class="label-foot">Contoh ilustratif, mengikuti angka pada poster. %AKG menggunakan acuan label, bukan hasil kalkulator pribadimu.</p>
+          </div>
+          <div class="simulation">
+            <div class="slider-card"><label for="servings">Berapa sajian yang kamu makan?</label><div class="slider-top"><strong id="serving-count">1 sajian</strong><span id="food-weight">25 g camilan</span></div><input id="servings" type="range" min="1" max="4" step="1" value="1" aria-describedby="servings-help"><div class="slider-ticks" aria-hidden="true"><span>1</span><span>2</span><span>3</span><span>4</span></div><p id="servings-help">Satu kemasan pada contoh ini berisi 4 sajian.</p></div>
+            <div class="shock-card" aria-live="polite"><span class="shock-label">DARI JUMLAH YANG DIMAKAN</span><p><strong id="total-fat">9 g</strong> lemak total</p><div class="shock-line"><span id="total-percent">13% AKG label</span><span id="total-calories">140 kkal</span></div></div>
+            <p class="simulation-note" id="simulation-note">Angka di label berlaku per sajian. Jika makan lebih dari satu sajian, kalikan semua angka gizi.</p>
+            <div class="difference-note"><strong>Mengapa angka kalkulator dan %AKG label berbeda?</strong><p>Kalkulator memakai kebutuhan energi menurut usia dan jenis kelamin (AKG 2019). Persentase pada contoh label memakai acuan label 2.000 kkal, sekitar 67 g lemak sehari. Hasil 52% berasal dari 13% per sajian × 4; angka %AKG per sajian pada label telah dibulatkan.</p></div>
+          </div>
+        </div>
+        <div class="steps" aria-label="Tiga langkah cek lemak"><h3>Tiga langkah cek lemak</h3><ol><li><span>1</span><p>Lihat <strong>lemak total</strong> per sajian.</p></li><li><span>2</span><p>Cek <strong>jumlah sajian</strong> dalam kemasan.</p></li><li><span>3</span><p><strong>Kalikan</strong> jika makan lebih dari satu sajian.</p></li></ol></div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="pilihan" aria-labelledby="pilihan-title">
+      <div class="wrap">
+        <div class="section-heading"><span class="section-number">04 / PILIHAN</span><h2 id="pilihan-title">Lagi ingin <mark>ngemil apa?</mark></h2><p>Keinginan ngemil boleh direspons. Pilih alternatif yang terasa cocok dan tetap perhatikan porsinya.</p></div>
+        <div class="choice-control" role="tablist" aria-label="Pilihan rasa"><button type="button" role="tab" id="tab-gurih" aria-controls="panel-gurih" aria-selected="true">✦ Lagi pengen gurih</button><button type="button" role="tab" id="tab-manis" aria-controls="panel-manis" aria-selected="false" tabindex="-1">✧ Lagi pengen manis</button></div>
+        <div class="choice-panel" id="panel-gurih" role="tabpanel" aria-labelledby="tab-gurih"><div class="choice-intro"><span class="choice-illustration" aria-hidden="true">✦</span><div><h3>Gurih tetap bisa lebih bijak</h3><p>Coba satu pilihan berikut saat ingin rasa gurih.</p></div></div><ul class="choice-list"><li>Jagung rebus dengan sedikit mentega</li><li>Popcorn dengan sedikit garam</li><li>Crackers gandum utuh rendah lemak</li><li>Snack panggang atau rendah lemak, setelah dicek label gizinya</li></ul></div>
+        <div class="choice-panel" id="panel-manis" role="tabpanel" aria-labelledby="tab-manis" hidden><div class="choice-intro"><span class="choice-illustration" aria-hidden="true">✧</span><div><h3>Manis dengan pilihan sederhana</h3><p>Pilih yang kamu suka, lalu ambil secukupnya.</p></div></div><ul class="choice-list"><li>Buah potong</li><li>Yogurt dengan buah</li><li>Pisang rebus atau panggang</li><li>Ubi cilembu</li><li>Puding susu rendah gula</li></ul></div>
+        <p class="choice-tip"><strong>Ingat:</strong> tulisan “dipanggang” atau “rendah lemak” bukan pengganti membaca takaran saji dan label gizi.</p>
+      </div>
+    </section>
+
+    <section class="section" id="situasi" aria-labelledby="situasi-title">
+      <div class="wrap">
+        <div class="section-heading"><span class="section-number">05 / DI LUAR RUMAH</span><h2 id="situasi-title">Siapkan keputusan <mark>sebelum tergoda.</mark></h2><p>Tiga situasi sehari-hari yang sering membuat porsi ngemil bertambah.</p></div>
+        <div class="scenario-layout"><div class="scenario-tabs" role="tablist" aria-label="Situasi ngemil"><button type="button" role="tab" id="tab-belanja" aria-controls="panel-belanja" aria-selected="true">01 <span>Saat belanja</span></button><button type="button" role="tab" id="tab-bertamu" aria-controls="panel-bertamu" aria-selected="false" tabindex="-1">02 <span>Saat bertamu</span></button><button type="button" role="tab" id="tab-minimarket" aria-controls="panel-minimarket" aria-selected="false" tabindex="-1">03 <span>Masuk minimarket</span></button></div>
+          <div class="scenario-panel" id="panel-belanja" role="tabpanel" aria-labelledby="tab-belanja"><span class="scenario-tag">Jebakan promo</span><h3>“Kalau tidak promo, apakah aku tetap mau beli?”</h3><p>Lihat promo? Jangan langsung ambil. Beli sesuai kebutuhan, bukan karena takut kehilangan promo.</p><div class="scenario-action">Coba tulis daftar belanja sebelum berangkat.</div></div>
+          <div class="scenario-panel" id="panel-bertamu" role="tabpanel" aria-labelledby="tab-bertamu" hidden><span class="scenario-tag">Porsi terlihat jelas</span><h3>Ambil secukupnya sejak awal.</h3><p>Kalau sudah ngemil sebelumnya, cukup cicipi atau tidak perlu tambah lagi. Gunakan piring atau wadah kecil agar kamu bisa melihat jumlah yang dimakan.</p><div class="scenario-action">Tidak harus menghabiskan semua camilan yang disajikan.</div></div>
+          <div class="scenario-panel" id="panel-minimarket" role="tabpanel" aria-labelledby="tab-minimarket" hidden><span class="scenario-tag">Masuk dengan tujuan</span><h3>Mau beli air? Ambil air, lalu ke kasir.</h3><p>Semakin lama melihat-lihat, semakin banyak kesempatan membeli makanan yang tidak direncanakan.</p><div class="scenario-action">Tentukan barang yang dicari sebelum masuk.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alarm-section" id="alarm" aria-labelledby="alarm-title">
+      <div class="wrap alarm-grid"><div><span class="section-number light">06 / DUKUNGAN</span><h2 id="alarm-title">Bikin <span>“alarm snack”</span> bareng orang terdekat.</h2><p>Sepakati batas yang realistis, lalu minta seseorang mengingatkan dengan cara yang nyaman buatmu.</p><div class="alarm-decoration" aria-hidden="true">“Kita saling ingatkan, ya!”</div></div><form class="alarm-form" id="alarm-form"><h3>Tulis kesepakatanmu</h3><div class="field"><label for="person-name">Nama orang terdekat</label><input id="person-name" name="person" type="text" maxlength="60" placeholder="Contoh: Kak Rani" required></div><div class="field"><label for="snack-limit">Batas snack yang disepakati</label><input id="snack-limit" name="limit" type="text" maxlength="120" placeholder="Contoh: satu porsi di sore hari" required></div><button class="button whatsapp" type="submit">Kirim pesan lewat WhatsApp <span aria-hidden="true">↗</span></button><p class="privacy-note">Pesan disusun di browsermu. Website ini tidak menyimpan nama atau kesepakatanmu.</p></form></div>
+    </section>
+
+    <section class="section" id="video" aria-labelledby="video-title"><div class="wrap"><div class="section-heading"><span class="section-number">07 / LANJUT BELAJAR</span><h2 id="video-title">Saat keinginan ngemil <mark>muncul lagi.</mark></h2><p>Kenali pemicunya, jeda sebentar, lalu pilih tindakan yang membantu.</p></div><div class="video-grid"><div class="video-frame" id="video-frame"><span class="play-symbol" aria-hidden="true">▶</span><strong>Video edukasi segera hadir</strong><p>Tautan video akan dipasang setelah tersedia.</p></div><div class="video-copy"><h3>Yang akan dibahas di video</h3><ul><li>Saat bosan, pekerjaan menumpuk, stres, atau melihat promo.</li><li>Coba jeda lima menit, minum air, berjalan sebentar, atau pindah tempat.</li><li>Kalau suatu hari kebablasan, lanjutkan lagi di kesempatan berikutnya.</li></ul><a class="text-link" href="assets/poster-cek-label.png" target="_blank" rel="noopener">Lihat poster pendamping <span aria-hidden="true">↗</span></a></div></div></div></section>
+
+    <section class="closing"><div class="wrap closing-grid"><div><span class="section-number light">MULAI DARI SATU LANGKAH</span><h2>Cek labelnya.<br><span>Batasi lemaknya.</span></h2><p>Saat memilih camilan berikutnya, mulai dari takaran saji. Langkah kecil yang dilakukan berulang lebih mudah dipertahankan.</p></div><a href="#label" class="button closing-button">Latihan cek label lagi <span aria-hidden="true">↑</span></a></div></section>
+  </main>
+
+  <footer class="footer"><div class="wrap footer-grid"><div><strong>Ngemil Lebih Bijak</strong><p>Materi edukasi gizi untuk membantu memilih dan mengatur camilan sehari-hari.</p></div><div><h3>Penyusun</h3><p>Himawati Harisatul Ihsani Alfaruqi, S.Gz<br>NIM 260170200111002</p><h3>Pembimbing</h3><p>Dr. Nurul Muslihah, S.P., M.Kes.</p></div><div><h3>Sumber utama</h3><ul><li>Kemenkes RI. Permenkes No. 28 Tahun 2019 tentang Angka Kecukupan Gizi.</li><li>WHO. <cite>Total fat intake for the prevention of unhealthy weight gain</cite> (2023).</li><li>WHO. <cite>Saturated fatty acid and trans-fatty acid intake</cite> (2023).</li><li>BPOM RI. Ketentuan Informasi Nilai Gizi pangan olahan.</li></ul><p class="footer-small">Contoh label mengikuti poster pendamping dan bersifat ilustratif. Informasi ini bukan pengganti saran gizi pribadi.</p></div></div><div class="wrap footer-bottom"><span>© 2026 Edukasi Gizi FIKES UB</span><a href="#atas">Kembali ke atas ↑</a></div></footer>
+</body>
+</html>
