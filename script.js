@@ -27,16 +27,25 @@ function updateCalculator() {
 
 function updateSimulation() {
   const servings = Number(document.getElementById("servings").value);
+  const simulator = document.querySelector(".simulator-card");
+  const results = document.getElementById("sim-results");
   document.getElementById("serving-count").textContent = `${servings} sajian`;
   document.getElementById("food-weight").textContent = `${servings * 25} g camilan`;
   document.getElementById("total-fat").textContent = `${idNumber(servings * 9)} g`;
-  document.getElementById("total-percent").textContent = `${servings * 13}% AKG label`;
+  document.getElementById("total-percent").textContent = `${servings * 13}% AKG`;
+  document.getElementById("total-satfat").textContent = `${idNumber(servings * 2.5, servings % 2 ? 1 : 0)} g`;
+  document.getElementById("satfat-percent").textContent = `${servings * 13}% AKG`;
   document.getElementById("total-calories").textContent = `${idNumber(servings * 140)} kkal`;
   document.getElementById("simulation-note").textContent = servings === 4
-    ? "Satu kemasan utuh = 36 g lemak total, atau 52% AKG lemak pada contoh label. Ini lebih dari separuh acuan harian label."
+    ? "36 g lemak — lebih dari separuh acuan 67 g sehari, setara ±2½ sdm minyak."
     : servings === 1
-      ? "Angka di label berlaku per sajian. Jika makan lebih dari satu sajian, kalikan semua angka gizi."
-      : `${servings} sajian berarti semua angka per sajian di label dikalikan ${servings}.`;
+      ? "Angka label berlaku per sajian. Kalikan jika makan lebih dari satu sajian."
+      : `${servings} sajian berarti semua angka gizi per sajian dikalikan ${servings}.`;
+  simulator.classList.toggle("is-high", servings * 13 >= 50);
+  results.classList.remove("pulse");
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  void results.offsetWidth;
+  results.classList.add("pulse");
 }
 
 function initTabs(tabListSelector) {
@@ -73,6 +82,13 @@ function initTabs(tabListSelector) {
 document.getElementById("gender").addEventListener("change", updateCalculator);
 document.getElementById("age").addEventListener("change", updateCalculator);
 document.getElementById("servings").addEventListener("input", updateSimulation);
+document.getElementById("label-toggle").addEventListener("click", () => {
+  const label = document.getElementById("nutrition-label");
+  const expanded = label.classList.toggle("expanded");
+  const button = document.getElementById("label-toggle");
+  button.setAttribute("aria-expanded", String(expanded));
+  button.textContent = expanded ? "Tutup ▴" : "Lihat label lengkap ▾";
+});
 updateCalculator();
 updateSimulation();
 initTabs(".choice-control");

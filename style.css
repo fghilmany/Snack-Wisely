@@ -6,3 +6,37 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
 .brand-image{display:block;width:238px;height:52px;background-image:url('assets/poster-cek-label.png');background-repeat:no-repeat;background-size:819px 1229px;background-position:-33px -9px}
 @media(max-width:480px){.brand-image{width:204px;height:44px;background-size:704px 1056px;background-position:-28px -8px}}
+
+/* Revisi pembuka dan kartu dampak */
+.hero-actions{margin-bottom:0}
+.hero-art-top{z-index:5;top:0;right:0;max-width:92%;text-align:center}
+.snack-pack-illustration{position:relative;z-index:1;display:block;width:min(100%,310px);height:auto;transform:rotate(-6deg);filter:drop-shadow(15px 20px 0 rgba(14,74,90,.13)) drop-shadow(0 20px 22px rgba(14,74,90,.18))}
+.hero-art-note{z-index:4}
+.effect-icon svg{width:34px;height:34px;display:block}
+
+/* Revisi simulasi sajian */
+.label-static-note{max-width:495px;margin:0 0 10px;color:var(--teal);font-size:.84rem;font-weight:800}
+.label-toggle{display:none;width:100%;max-width:495px;margin:10px auto 0;border:2px solid var(--teal);border-radius:10px;padding:10px 14px;background:#fff;color:var(--teal);font-weight:900}
+.simulator-card{border:2px solid #dfe8dd;border-radius:22px;background:#fff;padding:24px;box-shadow:var(--shadow);margin-bottom:18px}
+.simulator-title{display:block;color:var(--teal);font-size:1.1rem;font-weight:900}
+.simulator-serving{display:flex;align-items:baseline;gap:7px;margin:10px 0;color:var(--teal)}
+.simulator-serving strong{font-size:1.45rem;line-height:1.15}
+.simulator-serving span:last-child{font-size:.9rem;color:#526564}
+.simulator-card input[type=range]{display:block;margin:12px 0 0}
+.servings-help{margin:5px 0 13px;color:#536260;font-size:.78rem}
+.sim-results{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.sim-metric{background:#f4f7ed;border-radius:12px;padding:12px;color:var(--teal)}
+.sim-metric span{display:block;font-size:.78rem;font-weight:800}
+.sim-metric strong{display:block;font-size:1.45rem;line-height:1.18;white-space:nowrap}
+.sim-metric b{display:block;font-size:.85rem;white-space:nowrap}
+.metric-fat{grid-column:1/-1;display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:10px;background:#f8d15b}
+.metric-fat strong{font-size:2.25rem}
+.simulator-card.is-high .metric-fat strong,.simulator-card.is-high .metric-fat b,.simulator-card.is-high .simulation-note{color:#D62828}
+.simulator-card.is-high .simulation-note{background:#fff0e9;border-left:4px solid #D62828;padding:9px 11px;border-radius:0 8px 8px 0}
+.simulation-note{margin:12px 0 0;font-size:.82rem;font-weight:800;line-height:1.4}
+.sim-results.pulse .sim-metric{animation:result-pulse .3s ease-out}
+@keyframes result-pulse{0%{transform:scale(.96);filter:brightness(1.13)}100%{transform:scale(1);filter:brightness(1)}}
+@media(max-width:780px){.hero-art{min-height:360px}.snack-pack-illustration{width:255px}.hero-art-top{top:-4px;right:0}.label-grid{gap:22px}}
+@media(max-width:640px){.nutrition-label:not(.expanded) .label-extra{display:none}.label-toggle{display:block}.label-static-note{font-size:.78rem}.nutrition-label{max-width:none}.simulator-card{padding:17px}.sim-metric{padding:10px}.metric-fat strong{font-size:1.9rem}.sim-metric strong{font-size:1.25rem}}
+@media(max-width:480px){.hero-art{min-height:340px}.snack-pack-illustration{width:235px}.hero-art-top{font-size:.82rem;padding:8px 12px;right:0;top:-2px}.hero-art-note{left:0;bottom:0}.effect-icon{width:44px;height:44px}.metric-fat{gap:5px}.metric-fat strong{font-size:1.75rem}.metric-fat b{font-size:.78rem}.simulator-serving strong{font-size:1.25rem}.simulator-serving span:last-child{font-size:.82rem}}
+@media(prefers-reduced-motion:reduce){.sim-results.pulse .sim-metric{animation:none}}
