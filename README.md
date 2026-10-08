@@ -16,10 +16,11 @@ Buka `index.html` di browser. Semua fitur utama berjalan tanpa instalasi, server
 ## Sebelum publikasi
 
 1. Konfirmasi sumber primer untuk anjuran jatah energi camilan 10–12%. Materi awal mencantumkan WHO 2017 pada bagian poster dan WHO 2023 pada bagian leaflet; website belum mengatribusikan angka itu ke WHO.
-2. Ganti area video setelah URL final diberikan. Pasang tautan cadangan jika menggunakan embed.
-3. Header saat ini menampilkan potongan logo dari gambar poster yang diberikan. Jika tersedia, gunakan berkas logo resmi tersendiri agar tampil lebih tajam. Poster pendamping asli tersedia di `assets/poster-cek-label.png`.
-4. Periksa ulang nama, gelar, NIM, dan persetujuan publikasi dari penyusun/pembimbing.
-5. Uji halaman pada ponsel sasaran dan aktifkan Google Form evaluasi hanya jika memang dipakai.
+2. Tambahkan tautan halaman Ayo Sehat Kemenkes yang memuat patokan %AKG ≤5% (rendah) dan ≥20% (tinggi); naskah website saat ini mengacu pada tangkapan layar yang diberikan penyusun.
+3. Ganti area video setelah URL final diberikan. Pasang tautan cadangan jika menggunakan embed.
+4. Header saat ini menampilkan potongan logo dari gambar poster yang diberikan. Jika tersedia, gunakan berkas logo resmi tersendiri agar tampil lebih tajam. Poster pendamping asli tersedia di `assets/poster-cek-label.png`.
+5. Periksa ulang nama, gelar, NIM, dan persetujuan publikasi dari penyusun/pembimbing.
+6. Uji halaman pada ponsel sasaran dan aktifkan Google Form evaluasi hanya jika memang dipakai.
 
 ## Angka yang digunakan
 

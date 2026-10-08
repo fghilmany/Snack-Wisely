@@ -40,3 +40,27 @@
 @media(max-width:640px){.nutrition-label:not(.expanded) .label-extra{display:none}.label-toggle{display:block}.label-static-note{font-size:.78rem}.nutrition-label{max-width:none}.simulator-card{padding:17px}.sim-metric{padding:10px}.metric-fat strong{font-size:1.9rem}.sim-metric strong{font-size:1.25rem}}
 @media(max-width:480px){.hero-art{min-height:340px}.snack-pack-illustration{width:235px}.hero-art-top{font-size:.82rem;padding:8px 12px;right:0;top:-2px}.hero-art-note{left:0;bottom:0}.effect-icon{width:44px;height:44px}.metric-fat{gap:5px}.metric-fat strong{font-size:1.75rem}.metric-fat b{font-size:.78rem}.simulator-serving strong{font-size:1.25rem}.simulator-serving span:last-child{font-size:.82rem}}
 @media(prefers-reduced-motion:reduce){.sim-results.pulse .sim-metric{animation:none}}
+
+/* Kemasan lentur, hasil kalkulator dekat input, dan pilihan bergambar */
+.snack-pack-illustration{width:min(100%,330px);filter:drop-shadow(9px 18px 13px rgba(14,74,90,.23))}
+.energy-preview{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:12px;padding:13px 15px;background:#edf3dc;border-left:5px solid var(--mustard);border-radius:12px;color:var(--teal)}
+.energy-preview>span{font-size:.84rem;font-weight:900;line-height:1.25;max-width:55%}
+.energy-preview strong{white-space:nowrap;font-size:2rem;line-height:1}
+.energy-preview small{font-size:.82rem}
+.calc-result-title{font-size:1.25rem;letter-spacing:0;color:#fff;margin-bottom:13px}
+.calc-after-note{max-width:850px;margin:17px 0 0}
+.steps h3{max-width:700px}
+.steps li{align-items:flex-start}
+.steps li span{margin-top:1px}
+.steps li p{display:flex;flex-direction:column;gap:10px;align-items:flex-start;line-height:1.3}
+.steps li p strong{color:var(--teal)}
+.steps li p small{display:inline-block;background:#fff;padding:7px 10px;border-radius:8px;color:var(--teal);font-weight:900;font-size:.83rem;line-height:1.25}
+.steps-source{font-size:.74rem;color:#4f6759;margin:22px 0 0}
+.food-symbols{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}
+.choice-panel>h3{color:var(--teal);margin-bottom:20px}
+.illustrated-list li{display:flex;align-items:center;gap:14px;min-height:78px;padding:11px 14px;font-weight:800;line-height:1.3}
+.illustrated-list li::before{display:none}
+.food-icon{display:block;flex:none;width:56px;height:56px;padding:4px;border-radius:12px;background:#fff}
+@media(max-width:780px){.snack-pack-illustration{width:285px}}
+@media(max-width:640px){#hitung.section{padding:42px 0}#hitung .section-heading{margin-bottom:16px}#hitung .section-heading h2{font-size:2.15rem;margin:8px 0 9px}#hitung .section-heading p{font-size:.96rem;line-height:1.4;margin-bottom:0}#hitung .calc-grid{gap:10px}#hitung .panel{padding:17px}#hitung .panel-top{margin-bottom:11px}#hitung .field{margin-bottom:11px}#hitung .field label{margin-bottom:4px}#hitung .field select{height:44px}#hitung .energy-preview{margin-top:5px}#hitung .calc-result-title{margin-bottom:5px}#hitung .result-line{padding:10px 0}#hitung .result-note{margin-top:10px}#hitung .calc-after-note{margin-top:12px}.steps{padding:21px}.steps h3{font-size:1.15rem;line-height:1.2;margin-bottom:18px}.steps li+li{padding-top:15px}.steps li p{gap:6px}.steps li p small{font-size:.8rem}.steps-source{margin-top:18px}.choice-panel>h3{font-size:1.18rem;margin-bottom:14px}.illustrated-list li{min-height:72px}}
+@media(max-width:480px){.snack-pack-illustration{width:270px}.hero-art{min-height:350px}#hitung .section-heading h2{font-size:2rem}.energy-preview strong{font-size:1.8rem}.steps li span{width:43px;height:43px;font-size:1.25rem}.food-icon{width:52px;height:52px}}
