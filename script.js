@@ -41,7 +41,7 @@ function updateSimulation() {
     : servings === 1
       ? "Angka label berlaku per sajian. Kalikan jika makan lebih dari satu sajian."
       : `${servings} sajian berarti semua angka gizi per sajian dikalikan ${servings}.`;
-  simulator.classList.toggle("is-high", servings * 13 >= 50);
+  simulator.classList.toggle("is-high", servings * 13 >= 20);
   results.classList.remove("pulse");
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   void results.offsetWidth;
